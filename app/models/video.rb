@@ -1,4 +1,17 @@
+class YoutubeValidator < ActiveModel::EachValidator
+  def validate_each(record, attribute, value)
+    begin
+      record.youtube_service.youtube_video
+    rescue
+      record.errors[attribute] << (options[:message] || "id inválido")
+    end
+  end
+end
+
+
 class Video < ActiveRecord::Base
+  validates :youtube_id, presence: true, youtube: true
+
   def self.find_by_params(params)
     find_by(youtube_id: params)
   end
@@ -20,6 +33,16 @@ class Video < ActiveRecord::Base
   end
 
   def description
-    @youtube_service.description
+    youtube_service.description
+  end
+
+  private
+
+  def exist_in_youtube
+    begin
+      youtube_service.youtube_video
+    rescue
+      errors.add(:youtube_id, 'inválido')
+    end
   end
 end
