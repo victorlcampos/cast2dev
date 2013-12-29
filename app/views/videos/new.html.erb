@@ -1,0 +1,15 @@
+<div class="large-8 columns" id="videos">
+  <div class="row">
+    <h1>Formulário de criação de vídeo</h1>
+    <%= form_for @video do |f| %>
+      <div class="row">
+        <div class="large-12 columns">
+          <%= f.label :youtube_id, 'Id do video do Youtube' %>
+          <%= f.text_field :youtube_id %>
+        </div>
+      </div>
+
+      <%= f.submit 'Criar Video', class: :button %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="large-8 columns" id="videos">
+  <div class="row">
+    <h1 class="large-12 columns"><%= @youtube_service.title %></h1>
+    <div class="player large-12 columns">
+      <iframe width="100%" height="315" src="//www.youtube.com/embed/<%= @video.youtube_id %>" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-description large-12 columns">
+      <h2 class="subheader">Descrição:</h2>
+      <p><%= @youtube_service.description %></p>
+    </div>
+  </div>
+</div>

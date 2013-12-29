@@ -1,0 +1,12 @@
+<div class="large-8 columns" id="videos">
+  <div class="row">
+    <% @videos.each do |video| %>
+      <%= link_to video_path(video), class: 'large-6 small-6 columns' do %>
+        <%= image_tag video.thumbnail_url %>
+        <div class="panel">
+          <h5><%= video.title %></h5>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
