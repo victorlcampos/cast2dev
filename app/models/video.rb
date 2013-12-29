@@ -10,7 +10,7 @@ end
 
 
 class Video < ActiveRecord::Base
-  validates :youtube_id, presence: true, youtube: true
+  validates :youtube_id, presence: true, uniqueness: true, youtube: true
 
   def self.find_by_params(params)
     find_by(youtube_id: params)
