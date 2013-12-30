@@ -9,7 +9,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    @video = Video.new(params.require(:video).permit(:youtube_id))
+    @video = Video.new(params.require(:video).permit(:youtube_id, :tag_list))
 
     if @video.save
       redirect_to video_path(@video)

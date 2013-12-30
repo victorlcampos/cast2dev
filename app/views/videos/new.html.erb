@@ -9,6 +9,13 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="large-12 columns">
+          <%= f.label :tag_list, "Tags (separar por vírgula)" %><br />
+          <%= f.text_field :tag_list %>
+        </div>
+      </div>
+
       <%= f.submit 'Criar Video', class: :button %>
     <% end %>
   </div>

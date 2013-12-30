@@ -10,6 +10,8 @@ end
 
 
 class Video < ActiveRecord::Base
+  acts_as_taggable
+
   scope :recent_first, -> { order('created_at DESC') }
 
   validates :youtube_id, presence: true, uniqueness: true, youtube: true

@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'foundation-rails'
 gem 'youtube_it'
+gem 'acts-as-taggable-on'
 
 #core
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
