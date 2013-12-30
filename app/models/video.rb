@@ -10,6 +10,8 @@ end
 
 
 class Video < ActiveRecord::Base
+  scope :recent_first, -> { order('created_at DESC') }
+
   validates :youtube_id, presence: true, uniqueness: true, youtube: true
 
   def self.find_by_params(params)
