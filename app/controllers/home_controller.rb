@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  PER_PAGE = 1
+  PER_PAGE = 10
 
   def index
     @videos = Video.all.recent_first.page(params[:page]).per(PER_PAGE)
