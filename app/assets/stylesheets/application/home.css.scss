@@ -6,3 +6,18 @@
   .m { font-size: 1.2em; }
   .l { font-size: 1.8em; }
 }
+
+.pagination {
+  margin: 20px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    padding: 3px;
+    margin: 0 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+}
