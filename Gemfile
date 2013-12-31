@@ -3,7 +3,10 @@ source 'https://rubygems.org'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'foundation-rails'
+
 gem 'youtube_it'
+gem "github_api"
+
 gem 'acts-as-taggable-on'
 
 #core
