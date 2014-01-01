@@ -5,8 +5,11 @@
 Portal cast2dev, projeto open source mantido pelo grupo Ruby on Rails Brasil(facebook).
 
 Quem quiser contribuir, pode fazer de diversas formas:
+
 1 - Pull Request(https://help.github.com/articles/using-pull-requests)
+
 2 - Adicionando Issues
+
 3 - Adicionando Videos que acharem legal
+
 4 - Reportando vídeos fora da regras
-etc
