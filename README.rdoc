@@ -1,28 +1,12 @@
+{<img src="https://codeclimate.com/github/victorlcampos/cast2dev.png" />}[https://codeclimate.com/github/victorlcampos/cast2dev]
+
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Portal cast2dev, projeto open source mantido pelo grupo Ruby on Rails Brasil(facebook).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Quem quiser contribuir, pode fazer de diversas formas:
+1 - Pull Request(https://help.github.com/articles/using-pull-requests)
+2 - Adicionando Issues
+3 - Adicionando Videos que acharem legal
+4 - Reportando vídeos fora da regras
+etc
