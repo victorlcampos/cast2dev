@@ -8,6 +8,7 @@ gem 'youtube_it'
 gem "github_api"
 
 gem 'acts-as-taggable-on'
+gem 'kaminari'
 
 #core
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
