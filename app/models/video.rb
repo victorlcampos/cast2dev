@@ -10,6 +10,7 @@ end
 
 
 class Video < ActiveRecord::Base
+  belongs_to :category
   acts_as_taggable
 
   scope :recent_first, -> { order('created_at DESC') }

@@ -5,4 +5,5 @@ class HomeController < ApplicationController
     @videos = Video.all.recent_first.page(params[:page]).per(PER_PAGE)
     @videos = @videos.tagged_with(params[:tag]) if params[:tag]
   end
-end
+
+  end

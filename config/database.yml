@@ -4,7 +4,7 @@ development:
   database: cast2dev_database_dev
   pool: 5
   username: vagrant
-  password:
+  password: 
 
 test:
   adapter: postgresql
@@ -12,7 +12,7 @@ test:
   database: cast2dev_database_test
   pool: 5
   username: vagrant
-  password:
+  password: 
 
 production:
   adapter: postgresql

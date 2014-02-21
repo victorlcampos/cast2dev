@@ -1,0 +1,27 @@
+<div class="large-8 columns" id="videos">
+	
+  <div class="row">
+    <div class='large-12 small-12 columns'>
+      <h3><%= @category.name.capitalize %></h3>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <% if @videos.count > 0 %>
+      <% @videos.each do |video| %>
+        <%= link_to video_path(video), class: 'large-6 small-6 columns' do %>
+          <%= image_tag video.thumbnail_url %>
+          <div class="panel">
+            <h5><%= video.title %></h5>
+          </div>
+        <% end %>
+      <% end %>
+    <% else %>
+      <div class="panel">
+        <h5>Não existem videos cadastrados nessa categoria</h5>
+      </div>
+    <% end %>
+    </div>
+
+ </div>

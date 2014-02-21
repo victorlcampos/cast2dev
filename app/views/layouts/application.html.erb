@@ -24,7 +24,8 @@
                 </li>
               </ul>
 
-              <section class="top-bar-section">
+              <section class="top-bar-section">                
+
                 <!-- Right Nav Section -->
                 <ul class="right">
                   <li class="divider"></li>
@@ -35,6 +36,21 @@
                     </ul>
                   </li>
                 </ul>
+
+                <ul class="right">
+                  <li class="divider"></li>
+                    <li class="has-dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="dropdown">
+                      <% Category.all.each do |category|%>
+                        <li>
+                          <%= link_to category.name.capitalize ,category_video_path(category.id) %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </li>
+
+              </ul>
               </section>
             </nav>
             <!-- End Top Bar -->
