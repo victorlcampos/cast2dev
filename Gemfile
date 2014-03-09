@@ -16,6 +16,13 @@ gem 'rails', '4.0.2'
 
 gem 'pg'
 
+gem 'simple_form'
+
+gem 'sunspot_rails'
+
+group :development do
+  gem 'sunspot_solr'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -57,3 +64,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+

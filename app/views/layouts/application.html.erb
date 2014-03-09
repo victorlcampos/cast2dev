@@ -3,7 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cast2dev</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+        <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -22,9 +23,11 @@
                     </a>
                   </h1>
                 </li>
-              </ul>
+
+            </ul>
 
               <section class="top-bar-section">
+
                 <!-- Right Nav Section -->
                 <ul class="right">
                   <li class="divider"></li>
@@ -35,6 +38,36 @@
                     </ul>
                   </li>
                 </ul>
+                                <ul class="right">
+                  <li class="divider"></li>
+                    <li class="has-dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="dropdown">
+                      <% Category.all.each do |category|%>
+                        <li>
+                          <%= link_to category.name.capitalize ,category_video_path(category.id) %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </li>
+
+                </ul>
+                <ul class="right">
+                <li class="has-form">
+                  <div class="row collapse">
+                    <div class="large-8 small-9 columns">
+                      <%= form_tag root_path,:method => :get do %>
+                      <%= text_field_tag :search, params[:search], class: "input-search", type: 'search' %>
+                    </div>
+                    <div class="large-4 small-3 columns">
+                      <%= submit_tag "Buscar", :name => nil, class: "button [tiny small large]" %>
+                      <% end %>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
               </section>
             </nav>
             <!-- End Top Bar -->

@@ -1,8 +1,9 @@
 ActiveAdmin.register Video do
-  permit_params :youtube_id, :tag_list
+  permit_params :category_id, :youtube_id, :tag_list
 
   form do |f|
     f.inputs 'Video' do
+      f.input :category 
       f.input :youtube_id
       f.input :tag_list
     end
