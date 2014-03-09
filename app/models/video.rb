@@ -17,6 +17,10 @@ class Video < ActiveRecord::Base
 
   validates :youtube_id, presence: true, uniqueness: true, youtube: true
 
+  searchable do
+    text :cache_title
+  end
+
   def self.find_by_params(params)
     find_by(youtube_id: params)
   end
